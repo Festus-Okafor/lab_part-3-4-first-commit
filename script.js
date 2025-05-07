@@ -36,91 +36,73 @@ for (let i = 0; i < table.length; i++) {
 console.log(
   `.................................................................`
 );
+//part 3
 //converting the arrays to arrObj
-const array1 = [
-  ["ID", "42"],
-  ["NAME", "Bruce"],
-  ["OCCUPATION", "Knight"],
-  ["Age", "41"]
-];
-const array2 = [
-  ["ID", "57"],
-  ["NAME", "Bob"],
-  ["OCCUPATION", "Fry Cook"],
-  ["Age", "19"]
-];
-const array3 = [
-  ["ID", "63"],
-  ["NAME", "Blaine"],
-  ["OCCUPATION", "Quiz Master"],
-  ["Age", "58"]
-];
-const array4 = [
-  ["ID", "98"],
-  ["NAME", "Bill"],
-  ["OCCUPATION", "Doctors Assistant"],
-  ["Age", "21"]
-];
-const obj1 = Object.fromEntries(array1);
-const obj2 = Object.fromEntries(array2);
-const obj3 = Object.fromEntries(array3);
-const obj4 = Object.fromEntries(array4);
-console.log(obj1);
-console.log(obj2);
-console.log(obj3);
-console.log(obj4);
+ 
+ const arrayObj = [ {
+  ID: 42,
+  NAME: "Bruce",
+  OCCUPATION: "Knight",
+  Age: 41,
+  },
+  { 
+  ID: 57,
+  NAME: "Bob",
+  OCCUPATION: "Fry Cook",
+  Age: 19,
+},
+{
+
+  ID: 63,
+  NAME: "Blaine",
+  OCCUPATION: "Quiz Master",
+  Age: 58,
+},
+{
+
+  ID: 98,
+  NAME: "Bill",
+  OCCUPATION: "Doctors Assistant",
+  Age: 21,
+}];
+
+
 
 console.log(
-  `.................................................................`
-);
+  `.................................................................`);
+console.log(arrayObj);
 // part 4, sorting and manipulating Data
-//1. removing the last element from the sorted array1
-let el1 = array1.pop();
-console.log(array1);
+//1. removing the last element from the sorted arrayObj
+let removeLast = arrayObj.pop();
+console.log(arrayObj);
 
-let el2 = array2.pop();
-console.log(array2);
-
-let el3 = array3.pop();
-console.log(array3);
-
-let el4 = array4.pop();
-console.log(array4);
+console.log(
+  `.................................................................`);
 //Insert the following object at index 1:
-const array5 = [
-  ["ID", "48"],
-  ["NAME", "Barry"],
-  ["OCCUPATION", "Runner"],
-  ["Age", "25"]
-];
+const arrayObj5 = {
+  ID: 48,
+  NAME:  "Barry",
+  OCCUPATION:  "Runner",
+  Age: 25,
+};
  
-array1.splice(1,0,array5)
-console.log(array1)
-// for the array2
-array2.splice(1,0,array5)
-console.log(array2)
-// for the array3
-array3.splice(1,0,array5)
-console.log(array3)
-// for the array4
-array4.splice(1,0,array5)
-console.log(array4)
+arrayObj.splice(1,0,arrayObj5)
+console.log(arrayObj)
 
-
+console.log(
+  `.................................................................`)
 //Add the following object to the end of the array:
-console.log(`..................................`)
-const array6 = [["ID", "7"],
-  ["NAME", "Bilbo"],
-  ["OCCUPATION", "None"],
-  ["Age", "111"]] 
-   array1.push(array6);
-   console.log(array1)
-   array2.push(array6);
-   console.log(array2)
-   array3.push(array6);
-   console.log(array3)
-   array4.push(array6);
-   console.log(array4)
 
+const arrayObj6 = {ID: 7,
+  NAME: "Bilbo",
+  OCCUPATION: "None",
+  Age: 111,
+} 
+arrayObj.push(arrayObj6);
+console.log(arrayObj)
 
+console.log(
+  `.................................................................`)
    //now using the values of each object within the array and the array length property to calculate the avr age of the group
+   // so avr age of group
+
