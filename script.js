@@ -109,32 +109,20 @@ console.log(
 for (let m = 0; m < arrayObj.length; m++) {
   //for(n=0; n <= m; n++){
   let arrNum = arrayObj[m].Age;
+        
+ 
 
-  //pushing the values of the age into another array container named newVal
-  let newVal = [];
-     let newValHolder = newVal.push(arrNum)
-     console.log(newVal);
-
-      const sum =newVal.reduce((partialSum, a) => partialSum + a, 0);
-      console.log(sum);
-
-
-
-/* 
-      let total = 0;
-      // writing a loop here
-      arrNum.forEach((number, m) => {
-           total += number 
-}); */
-    // console.log(total)
-/* 
-    let sum = 0;
-    for (let i = 0; i <= arrNum.length; i++) {
-      sum += arrNum[i];
-    }
-    return sum;
-  } */
-
-  //const result = sumArrNum()
-
-}
+     
+   
+         let newVal = [];
+        let newValHold= newVal.push(arrNum);
+         
+        function total(){
+          let total = 0;
+          for (let i =0; i<newVal.length; i++){
+             total += newVal[i]
+          }
+          return total;
+        }
+        console.log(total());
+      }
