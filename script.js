@@ -109,20 +109,16 @@ console.log(
 for (let m = 0; m < arrayObj.length; m++) {
   //for(n=0; n <= m; n++){
   let arrNum = arrayObj[m].Age;
-        
- 
 
-     
-   
-         let newVal = [];
-        let newValHold= newVal.push(arrNum);
-         
-        function total(){
-          let total = 0;
-          for (let i =0; i<newVal.length; i++){
-             total += newVal[i]
-          }
-          return total;
-        }
-        console.log(total());
-      }
+  let newVal = [];
+  let newValHold = newVal.push(arrNum);
+
+  function total() {
+    let total = 0;
+    for (let i = 0; i < newVal.length; i++) {
+      total += newVal[i];
+    }
+    return total;
+  }
+  console.log(total());
+}
