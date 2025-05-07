@@ -88,12 +88,39 @@ let el4 = array4.pop();
 console.log(array4);
 //Insert the following object at index 1:
 const array5 = [
-  ["ID", "7"],
+  ["ID", "48"],
+  ["NAME", "Barry"],
+  ["OCCUPATION", "Runner"],
+  ["Age", "25"]
+];
+ 
+array1.splice(1,0,array5)
+console.log(array1)
+// for the array2
+array2.splice(1,0,array5)
+console.log(array2)
+// for the array3
+array3.splice(1,0,array5)
+console.log(array3)
+// for the array4
+array4.splice(1,0,array5)
+console.log(array4)
+
+
+//Add the following object to the end of the array:
+console.log(`..................................`)
+const array6 = [["ID", "7"],
   ["NAME", "Bilbo"],
   ["OCCUPATION", "None"],
-  ["Age", "111"]
-];
-const obj5 = Object.fromEntries(array5);
-console.log(obj5);
-//inserting the above object at index 1 of the arrays
-  
+  ["Age", "111"]] 
+   array1.push(array6);
+   console.log(array1)
+   array2.push(array6);
+   console.log(array2)
+   array3.push(array6);
+   console.log(array3)
+   array4.push(array6);
+   console.log(array4)
+
+
+   //now using the values of each object within the array and the array length property to calculate the avr age of the group
