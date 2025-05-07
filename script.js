@@ -122,3 +122,4 @@ for (let m = 0; m < arrayObj.length; m++) {
   }
   console.log(total());
 }
+//stalcked in part 5
