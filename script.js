@@ -101,12 +101,18 @@ console.log(arrayObj);
 console.log(
   `.................................................................`
 );
+
+  let sum = arrayObj[0].Age + arrayObj[1].Age + arrayObj[2].Age + arrayObj[3].Age;
+  const average = sum/4;
+
+  console.log(`The average age of the group is:  ${average}`);
+
 //now using the values of each object within the array and the array length property to calculate the avr age of the group
 // so avr age of group
 
 // to get the age of individual objects
 
-for (let m = 0; m < arrayObj.length; m++) {
+/* for (let m = 0; m < arrayObj.length; m++) {
   //for(n=0; n <= m; n++){
   let arrNum = arrayObj[m].Age;
 
@@ -121,5 +127,4 @@ for (let m = 0; m < arrayObj.length; m++) {
     return total;
   }
   console.log(total());
-}
-//stalcked in part 5
+} */
